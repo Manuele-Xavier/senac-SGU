@@ -1,1 +1,1 @@
-# senac-SGU
+# ProjetoIntegrador-Turma02-TSI

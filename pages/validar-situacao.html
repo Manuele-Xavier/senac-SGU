@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <link href="../styles.css" rel="stylesheet" />
+    <title>
+        Validar Situação Cadastral
+    </title>
+</head>
+
+<body>
+    <div class="shell">
+        <div class="desktop-shell">
+            <aside class="sidebar">
+                <div class="brand">
+                    <div class="brand-mark">
+                        🎓
+                    </div>
+                    <div>
+                        <div class="brand-title">
+                            SGU
+                        </div>
+                        <div class="brand-sub">
+                            Sistema de Gestão Universitária
+                        </div>
+                    </div>
+                </div>
+                <div class="nav">
+                    <a href="./dashboard-secretaria.html">
+                        <span class="dot">
+                        </span>
+                        Dashboard
+                    </a>
+                    <a class="" href="./cadastro-docente.html">
+                        <span class="dot">
+                        </span>
+                        Docentes 
+                    </a>
+                    <a class="" href="./cadastro-aluno.html">
+                        <span class="dot">
+                        </span>
+                        Alunos
+                    </a>
+                    <a class="" href="./cadastro-fornecedor.html">
+                        <span class="dot">
+                        </span>
+                        Cadastros
+                    </a>
+                     <a class="" href="./cadastro-pessoa.html">
+                        <span class="dot">
+                        </span>
+                        pessoas
+                    </a>
+                    <a class="" href="./lancar-notas.html">
+                        <span class="dot">
+                        </span>
+                        Notas
+                    </a>
+                    <a class="" href="./visualizar-boletim.html">
+                        <span class="dot">
+                        </span>
+                        Boletim
+                    </a>
+                    <a class="active" href="./validar-situacao.html">
+                        <span class="dot">
+                        </span>
+                        Situação
+                    </a>
+                </div>
+                <div class="sidebar-footer">
+                    Protótipo conceitual baseado no levantamento da entrega 1.
+                    <br />
+                    Texto e fluxos alinhados aos casos de uso do PDF.
+                </div>
+            </aside>
+            <main class="content">
+                <div class="topbar">
+                    <div>
+                        <div class="page-title">
+                            Validar Situação Cadastral
+                        </div>
+                        <div class="subtle">
+                            Protótipos desktop baseados na entrega 1
+                        </div>
+                    </div>
+                    <div class="userchip">
+                        <div class="badge active">
+                            Secretaria / Administração
+                        </div>
+                        <div class="avatar">
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-header">
+                        <div>
+                            <div class="panel-title">
+                                Validar Situação Cadastral
+                            </div>
+                            <div class="panel-sub">
+                                Cadastros › Validar Situação
+                            </div>
+                        </div>
+                        <span class="badge active">
+                            UC05
+                        </span>
+                    </div>
+                    <div class="grid cols-2">
+                        <div class="fieldset">
+                            <div class="section-title">
+                                Consulta
+                            </div>
+                            <div class="form-grid two">
+                                <div>
+                                    <label>
+                                        Tipo
+                                    </label>
+                                    <select>
+                                        <option>
+                                            Pessoa Física (CPF)
+                                        </option>
+                                        <option>
+                                            Pessoa Jurídica (CNPJ)
+                                        </option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="required">
+                                        Documento
+                                    </label>
+                                    <input class="input" placeholder="000.000.000-00" />
+                                </div>
+                            </div>
+                            <div class="actions" style="padding-top:10px">
+                                <button class="btn primary">
+                                    Validar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="fieldset">
+                            <div class="section-title">
+                                Resultado da validação
+                            </div>
+                            <div class="card pad" style="background:#eefbf0;border-color:#ccead5">
+                                <div class="metric-row">
+                                    <strong>
+                                        Situação: REGULAR
+                                    </strong>
+                                    <span class="status ok">
+                                        OK
+                                    </span>
+                                </div>
+                                <div class="hr">
+                                </div>
+                                <div class="small">
+                                    Nome: João da Silva
+                                </div>
+                                <div class="small">
+                                    CPF: 000.000.000-00
+                                </div>
+                                <div class="small">
+                                    Data da consulta: 10/05/2024 14:35:22
+                                </div>
+                            </div>
+                            <div class="small subtle" style="margin-top:10px">
+                                Dados obtidos via API da Receita Federal.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <link href="../styles.css" rel="stylesheet" />
+    <title>
+        Cadastro de Docente
+    </title>
+</head>
+
+<body>
+    <div class="shell">
+        <div class="desktop-shell">
+            <aside class="sidebar">
+                <div class="brand">
+                    <div class="brand-mark">
+                        🎓
+                    </div>
+                    <div>
+                        <div class="brand-title">
+                            SGU
+                        </div>
+                        <div class="brand-sub">
+                            Sistema de Gestão Universitária
+                        </div>
+                    </div>
+                </div>
+                <div class="nav">
+                    <a  href="./dashboard-secretaria.html">
+                        <span class="dot">
+                        </span>
+                        Dashboard
+                    </a>
+                    <a class="active" href="./cadastro-docente.html">
+                        <span class="dot">
+                        </span>
+                        Docentes 
+                    </a>
+                    <a class="" href="./cadastro-aluno.html">
+                        <span class="dot">
+                        </span>
+                        Alunos
+                    </a>
+                    <a class="" href="./cadastro-fornecedor.html">
+                        <span class="dot">
+                        </span>
+                        Cadastros
+                    </a>
+                     <a class="" href="./cadastro-pessoa.html">
+                        <span class="dot">
+                        </span>
+                        pessoas
+                    </a>
+                    <a class="" href="./lancar-notas.html">
+                        <span class="dot">
+                        </span>
+                        Notas
+                    </a>
+                    <a class="" href="./visualizar-boletim.html">
+                        <span class="dot">
+                        </span>
+                        Boletim
+                    </a>
+                    <a class="" href="./validar-situacao.html">
+                        <span class="dot">
+                        </span>
+                        Situação
+                    </a>
+                </div>
+                <div class="sidebar-footer">
+                    Protótipo conceitual baseado no levantamento da entrega 1.
+                    <br />
+                    Texto e fluxos alinhados aos casos de uso do PDF.
+                </div>
+            </aside>
+            <main class="content">
+                <div class="topbar">
+                    <div>
+                        <div class="page-title">
+                            Cadastro de Docente
+                        </div>
+                        <div class="subtle">
+                            Protótipos desktop baseados na entrega 1
+                        </div>
+                    </div>
+                    <div class="userchip">
+                        <div class="badge active">
+                            Secretaria / Administração
+                        </div>
+                        <div class="avatar">
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-header">
+                        <div>
+                            <div class="panel-title">
+                                Cadastro de Docente
+                            </div>
+                            <div class="panel-sub">
+                                Pessoas › Docentes › Novo
+                            </div>
+                        </div>
+                        <span class="badge active">
+                            UC02
+                        </span>
+                    </div>
+                    <div class="form-grid two">
+                        <div class="fieldset">
+                            <div class="section-title">
+                                Dados pessoais
+                            </div>
+                            <div class="form-grid two">
+                                <div>
+                                    <label class="required">
+                                        Nome completo
+                                    </label>
+                                    <input class="input" placeholder="Digite o nome completo" />
+                                </div>
+                                <div>
+                                    <label class="required">
+                                        CPF
+                                    </label>
+                                    <input class="input" placeholder="000.000.000-00" />
+                                </div>
+                                <div>
+                                    <label class="required">
+                                        E-mail institucional
+                                    </label>
+                                    <input class="input" placeholder="nome@universidade.edu.br" />
+                                </div>
+                                <div>
+                                    <label>
+                                        Telefone
+                                    </label>
+                                    <input class="input" placeholder="(00) 00000-0000" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fieldset">
+                            <div class="section-title">
+                                Dados profissionais
+                            </div>
+                            <div class="form-grid two">
+                                <div>
+                                    <label class="required">
+                                        Titulação
+                                    </label>
+                                    <select>
+                                        <option>
+                                            Selecione a titulação
+                                        </option>
+                                        <option>
+                                            Mestre
+                                        </option>
+                                        <option>
+                                            Doutor
+                                        </option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label>
+                                        Regime
+                                    </label>
+                                    <select>
+                                        <option>
+                                            Parcial
+                                        </option>
+                                        <option>
+                                            Integral
+                                        </option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label>
+                                        Disciplinas
+                                    </label>
+                                    <select>
+                                        <option>
+                                            Selecione
+                                        </option>
+                                        <option>
+                                            Banco de Dados I
+                                        </option>
+                                        <option>
+                                            Algoritmos de Programação
+                                        </option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label>
+                                        Status
+                                    </label>
+                                    <select>
+                                        <option>
+                                            Ativo
+                                        </option>
+                                        <option>
+                                            Inativo
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button class="btn ghost">
+                            Cancelar
+                        </button>
+                        <button class="btn primary">
+                            Salvar
+                        </button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

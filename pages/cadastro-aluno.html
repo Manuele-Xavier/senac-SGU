@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <link href="../styles.css" rel="stylesheet" />
+    <title>
+        Cadastro de Aluno
+    </title>
+</head>
+
+<body>
+    <div class="shell">
+        <div class="desktop-shell">
+            <aside class="sidebar">
+                <div class="brand">
+                    <div class="brand-mark">
+                        🎓
+                    </div>
+                    <div>
+                        <div class="brand-title">
+                            SGU
+                        </div>
+                        <div class="brand-sub">
+                            Sistema de Gestão Universitária
+                        </div>
+                    </div>
+                </div>
+                <div class="nav">
+                    <a href="./dashboard-secretaria.html">
+                        <span class="dot">
+                        </span>
+                        Dashboard
+                    </a>
+                    <a class="" href="./cadastro-docente.html">
+                        <span class="dot">
+                        </span>
+                        Docentes 
+                    </a>
+                    <a class="active" href="./cadastro-aluno.html">
+                        <span class="dot">
+                        </span>
+                        Alunos
+                    </a>
+                    <a class="" href="./cadastro-fornecedor.html">
+                        <span class="dot">
+                        </span>
+                        Cadastros
+                    </a>
+                     <a class="" href="./cadastro-pessoa.html">
+                        <span class="dot">
+                        </span>
+                        pessoas
+                    </a>
+                    <a class="" href="./lancar-notas.html">
+                        <span class="dot">
+                        </span>
+                        Notas
+                    </a>
+                    <a class="" href="./visualizar-boletim.html">
+                        <span class="dot">
+                        </span>
+                        Boletim
+                    </a>
+                    <a class="" href="./validar-situacao.html">
+                        <span class="dot">
+                        </span>
+                        Situação
+                    </a>
+                </div>
+                <div class="sidebar-footer">
+                    Protótipo conceitual baseado no levantamento da entrega 1.
+                    <br />
+                    Texto e fluxos alinhados aos casos de uso do PDF.
+                </div>
+            </aside>
+            <main class="content">
+                <div class="topbar">
+                    <div>
+                        <div class="page-title">
+                            Cadastro de Aluno
+                        </div>
+                        <div class="subtle">
+                            Protótipos desktop baseados na entrega 1
+                        </div>
+                    </div>
+                    <div class="userchip">
+                        <div class="badge active">
+                            Secretaria / Administração
+                        </div>
+                        <div class="avatar">
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-header">
+                        <div>
+                            <div class="panel-title">
+                                Cadastro de Aluno
+                            </div>
+                            <div class="panel-sub">
+                                Pessoas › Alunos › Novo
+                            </div>
+                        </div>
+                        <span class="badge active">
+                            UC01
+                        </span>
+                    </div>
+                    <div class="form-grid two">
+                        <div class="fieldset">
+                            <div class="section-title">
+                                Dados pessoais
+                            </div>
+                            <div class="form-grid two">
+                                <div>
+                                    <label class="required">
+                                        Nome completo
+                                    </label>
+                                    <input class="input" placeholder="Digite o nome completo" />
+                                </div>
+                                <div>
+                                    <label class="required">
+                                        CPF
+                                    </label>
+                                    <input class="input" placeholder="000.000.000-00" />
+                                </div>
+                                <div>
+                                    <label class="required">
+                                        Data de nascimento
+                                    </label>
+                                    <input class="input" placeholder="dd/mm/aaaa" />
+                                </div>
+                                <div>
+                                    <label class="required">
+                                        E-mail
+                                    </label>
+                                    <input class="input" placeholder="email@exemplo.com" />
+                                </div>
+                                <div>
+                                    <label>
+                                        Telefone
+                                    </label>
+                                    <input class="input" placeholder="(00) 00000-0000" />
+                                </div>
+                                <div>
+                                    <label>
+                                        Sexo
+                                    </label>
+                                    <select>
+                                        <option>
+                                            Selecione
+                                        </option>
+                                        <option>
+                                            Masculino
+                                        </option>
+                                        <option>
+                                            Feminino
+                                        </option>
+                                        <option>
+                                            Outro
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fieldset">
+                            <div class="section-title">
+                                Dados acadêmicos
+                            </div>
+                            <div class="form-grid two">
+                                <div>
+                                    <label class="required">
+                                        Curso
+                                    </label>
+                                    <select>
+                                        <option>
+                                            Selecione o curso
+                                        </option>
+                                        <option>
+                                            Engenharia de Software
+                                        </option>
+                                        <option>
+                                            Direito
+                                        </option>
+                                        <option>
+                                            Administração
+                                        </option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="required">
+                                        Período de ingresso
+                                    </label>
+                                    <select>
+                                        <option>
+                                            Selecione o período
+                                        </option>
+                                        <option>
+                                            2024/1
+                                        </option>
+                                        <option>
+                                            2024/2
+                                        </option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label>
+                                        Matrícula
+                                    </label>
+                                    <input class="input" placeholder="Será gerada automaticamente" />
+                                </div>
+                                <div>
+                                    <label>
+                                        Turma
+                                    </label>
+                                    <select>
+                                        <option>
+                                            Selecione a turma
+                                        </option>
+                                        <option>
+                                            ESF-2024A
+                                        </option>
+                                        <option>
+                                            DIR-2024A
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="hr">
+                            </div>
+                            <div class="grid" style="gap:12px">
+                                <div class="small subtle">
+                                    Fluxo baseado no caso de uso UC01 – Cadastrar aluno.
+                                </div>
+                                <div class="list-item">
+                                    <span>
+                                        Validação do CPF via Receita Federal
+                                    </span>
+                                    <span class="status ok">
+                                        Disponível
+                                    </span>
+                                </div>
+                                <div class="list-item">
+                                    <span>
+                                        Bloqueio por duplicidade de matrícula
+                                    </span>
+                                    <span class="status warn">
+                                        Regra ativa
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button class="btn ghost">
+                            Cancelar
+                        </button>
+                        <button class="btn primary">
+                            Salvar
+                        </button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

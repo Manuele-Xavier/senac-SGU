@@ -1,36 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="globals.css">
-        <link rel="stylesheet" href="style.css">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>SGU - Sistema de Gestão Universitária</title>
+        <link rel="stylesheet" href="css/globals.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="homepage"><div class="header"><div class="logo"><div class="text-wrapper">LOGO</div></div>
-            <div class="div">SISTEMA DE GESTÃO UNIVERSIÁRIA </div>
-            <div class="text-wrapper-2">DÚVIDAS</div>
-            <div class="text-wrapper-3">CONTATO</div>
-            <div class="perfil-section"><img class="perfil-logo" src="Perfil logo.svg">
-            <div class="text-wrapper-4">Acesse</div>
-            <img class="mask-group" src="Triangulo.svg"></div></div>
-            <div class="body"><div class="frame"><div class="text-wrapper-5">Acessar conta</div>
-                <div class="frame-2"><div class="ellipse"></div>
-                    <div class="text-wrapper-6">GESTOR</div>
-                    <div class="ellipse-2"></div>
-                    <div class="text-wrapper-7">DOCENTE</div>
-                    <div class="ellipse-2"></div>
-                    <div class="text-wrapper-8">ALUNO</div></div>
-                <div class="text-wrapper-9">E-mail</div>
-                <div class="frame-3"></div>
-                <div class="text-wrapper-10">Senha</div>
-                <div class="confidential-eye-wrapper"><div class="confidential-eye"></div></div>
-                <div class="text-wrapper-11">Esqueceu a senha?</div>
-                <div class="div-wrapper"><div class="text-wrapper-12">ACESSAR</div></div></div></div>
-        
+        <div class="homepage">
+            <header class="main-header">
+                <div class="logo">
+                    <span class="logo-text">LOGO</span>
+                </div>
+                <h1 class="system-title">SISTEMA DE GESTÃO UNIVERSITÁRIA</h1>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <nav class="nav-menu">
+                    <a href="#">DÚVIDAS</a>
+                    <a href="#">CONTATO</a>
+                </nav>
+                <div class="perfil-section">
+                    <img class="perfil-logo" src="source/Perfil logo.svg" alt="Perfil">
+                    <span class="perfil-text">Acesse</span>
+                    <img class="mask-group" src="source/Triangulo.svg" alt="Seta">
+                </div>
+            </header>
+
+            <main class="login-container">
+                <section class="login-card">
+                    <h2 class="card-title">Acessar conta</h2>
+                    <form class="login-form">
+                        <fieldset class="user-type-selector">
+                            <legend class="sr-only">Tipo de acesso</legend>
+                            <label class="radio-option">
+                                <input type="radio" name="user-type" value="gestor" checked>
+                                <span>GESTOR</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="user-type" value="docente">
+                                <span>DOCENTE</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="user-type" value="aluno">
+                                <span>ALUNO</span>
+                            </label>
+                        </fieldset>
+
+                        <div class="input-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="password">Senha</label>
+                            <div class="password-wrapper">
+                                <input type="password" id="password" name="password" required>
+                                <button type="button" class="confidential-eye"></button>
+                            </div>
+                        </div>
+
+                        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                        <button type="submit" class="btn-access">ACESSAR</button>
+                    </form>
+                </section>
+            </main>
+
+            <footer class="main-footer">
+                <p>© Turma 02 - PI Tecnologia de Sistemas para Internet EAD 2026</p>
+            </footer>
+        </div>
     </body>
-    <footer>
-        <div class="footer"><p class="p">©Turma 02 - PI Tecnologia de Sistemas para Internet EAD 2026</p></div></div>
-    </footer>
 </html>

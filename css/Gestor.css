@@ -1,0 +1,118 @@
+.gestor-view{
+    background-color: #2e1259;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.gestor-view .body-2{
+    flex: 1;
+    display: flex;
+    padding: 40px;
+    gap: 60px;
+    background-color: #2e1259;
+}
+
+.gestor-view .sidebar-filters {
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+.gestor-view .filter-btn {
+    height: 90px;
+    width: 100%;
+    background-color: #0238f9;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.gestor-view .filter-btn:hover {
+    transform: scale(1.02);
+    background-color: #0129b8;
+}
+
+.gestor-view .grid-cadastros {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    align-content: start;
+}
+
+.gestor-view .janela-cadastro {
+    background-color: #ced4e8;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.gestor-view .card-header {
+    background-color: #0238f9;
+    color: #fff;
+    padding: 15px 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.gestor-view .card-actions {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.gestor-view .btn-action {
+    height: 48px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4444e4;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.gestor-view .btn-action:hover {
+    background-color: #0238f9;
+}
+
+.gestor-view .btn-action:last-child {
+    background-color: #0238f9;
+}
+
+.gestor-view .btn-action:last-child:hover {
+    background-color: #0129b8;
+}
+
+.gestor-view .p-1 {
+    color: #555;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .gestor-view .body-2 {
+        flex-direction: column;
+        padding: 20px;
+        gap: 40px;
+    }
+
+    .gestor-view .sidebar-filters {
+        width: 100%;
+    }
+}
